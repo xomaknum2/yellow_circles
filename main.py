@@ -31,7 +31,7 @@ class Yellow_circle(QMainWindow, Ui_MainWindow):
         self.update()
 
     def circle(self, qp: QPainter):
-        qp.setBrush(QColor(255, 255, 0))
+        qp.setBrush(QColor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)))
         radius = random.randint(1, 800)
         qp.drawEllipse(QPoint(random.randint(1, 800), random.randint(1, 800)), radius, radius)
 
